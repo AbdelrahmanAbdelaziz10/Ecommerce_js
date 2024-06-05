@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Checkout :: Lukas - Car Parts Store eCommerce HTML Template</title>
+
+    <!--== Favicon ==-->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+
+    <!--== Google Fonts ==-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700%7CPoppins:400,400i,500,600&display=swap"
+        rel="stylesheet">
+
+    <!-- build:css assets/css/app.min.css -->
+    <!--== Leaflet Min CSS ==-->
+    <link href="assets/css/leaflet.min.css" rel="stylesheet" />
+    <!--== Nice Select Min CSS ==-->
+    <link href="assets/css/nice-select.min.css" rel="stylesheet" />
+    <!--== Slick Slider Min CSS ==-->
+    <link href="assets/css/slick.min.css" rel="stylesheet" />
+    <!--== Magnific Popup Min CSS ==-->
+    <link href="assets/css/magnific-popup.min.css" rel="stylesheet" />
+    <!--== Slicknav Min CSS ==-->
+    <link href="assets/css/slicknav.min.css" rel="stylesheet" />
+    <!--== Animate Min CSS ==-->
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <!--== Ionicons Min CSS ==-->
+    <link href="assets/css/ionicons.min.css" rel="stylesheet" />
+    <!--== Font-Awesome Min CSS ==-->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--== Bootstrap Min CSS ==-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--== Main Style CSS ==-->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- <link href="assets/css/style-rtl.css" rel="stylesheet" /> -->
+
+    <!--== Helper Min CSS ==-->
+    <link href="assets/css/helper.min.css" rel="stylesheet" />
+    <!-- endbuild -->
+
+    <!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="ltr">
+
+    <!--== Start Header Area ==-->
+    <div class="nav_one bg-img" data-bg="image/customer_review.png">
+        <div class="container">
+            <div class="row language_social">
+                <div class="col-8">
+                    <div class="social_media">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-4 language">
+                    <button class="btn-language" id="rtlButton">
+                        <i class="fa fa-language" aria-hidden="true"></i>
+                        <span class="lan_text">English</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <header class="header-area bg-img" data-bg="image/customer_review.png">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-4 col-lg-2 logo_div">
+                    <div class="site-logo text-center text-sm-left">
+                        <a href="index.html"><img src="image/logo2.png" alt="Logo" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 d-none d-lg-block">
+                    <div class="site-navigation">
+                        <ul class="main-menu nav">
+                            <li class="has-submenu"><a href="index.html">Home</a></li>
+                            <li><a href="about.html" class="">About</a></li>
+                            <li class="has-submenu"><a href="shop.html">Shop</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-lg-3 icon_div">
+                    <div class="site-action d-flex justify-content-center justify-content-sm-end align-items-center">
+                        <ul class="login-reg-nav nav">
+                            <li><i class="fa fa-user-o" aria-hidden="true"></i>
+                                <div class="regist navv">
+                                    <a href="login.html" class="btn btn_login">Login</a>
+                                    <a href="signup.html" class="btn btn_register">Register</a>
+                                </div>
+                            </li>
+                            <li><a href="./wishlist.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                        </ul>
+
+                        <div class="mini-cart-wrap">
+                            <a href="cart.html" class="btn-mini-cart">
+                                <i style="color: #E5BD5A;" class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <span class="cart-total">3</span>
+                            </a>
+
+                            <div class="mini-cart-content">
+                                <div class="mini-cart-product">
+                                    <div class="mini-product">
+                                        <div class="mini-product__thumb">
+                                            <a href="single-product.html"><img src="assets/img/product/product-1.png"
+                                                    alt="product" /></a>
+                                        </div>
+                                        <div class="mini-product__info">
+                                            <h2 class="title"><a href="single-product.html">Auto Clutch & Brake</a></h2>
+                                            <div class="mini-calculation">
+                                                <p class="price">5 x <span>$20.33</span></p>
+                                                <button class="remove-pro"><i class="ion-trash-b"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Repeat mini-product block for each item -->
+                                    <div class="mini-product">
+                                        <div class="mini-product__thumb">
+                                            <a href="single-product.html"><img src="assets/img/product/product-2.png"
+                                                    alt="product" /></a>
+                                        </div>
+                                        <div class="mini-product__info">
+                                            <h2 class="title"><a href="single-product.html">Leather Steering Wheel</a>
+                                            </h2>
+                                            <div class="mini-calculation">
+                                                <p class="price">5 x <span>$20.33</span></p>
+                                                <button class="remove-pro"><i class="ion-trash-b"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mini-product">
+                                        <div class="mini-product__thumb">
+                                            <a href="single-product.html"><img src="assets/img/product/product-3.png"
+                                                    alt="product" /></a>
+                                        </div>
+                                        <div class="mini-product__info">
+                                            <h2 class="title"><a href="single-product.html">Leather Steering Wheel</a>
+                                            </h2>
+                                            <div class="mini-calculation">
+                                                <p class="price">5 x <span>$20.33</span></p>
+                                                <button class="remove-pro"><i class="ion-trash-b"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Repeat mini-product block for each item -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="responsive-menu d-lg-none">
+                            <button class="btn-menu">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--== End Header Area ==-->
+
+
+    <!--== End Page Header Area ==-->
+    <!-- <div class="page-header-wrap bg-img" data-bg="assets/img/bg/page-header-bg.jpg"> -->
+    <div class="page-header-wrap bg-img">
+        <div class="container">
+            <ul class="breadcrumb text-start">
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="#">Chick Out</a></li>
+            </ul>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <div class="page-header-content">
+                        <div class="page-header-content-inner">
+                            <h1 class="mb-3">Chick Out</h1>
+                            <!-- <p> -->
+                            <!-- Click on your neares store location below to set the road on Google Map. -->
+                            <!-- </p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--== End Page Header Area ==-->
+
+    <!--== Start Page Content Wrapper ==-->
+    <div class="page-content-wrapper sp-y">
+        <div class="cart-page-content-wrap">
+            <div class="container container-wide">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="checkout-page-coupon-area">
+                            <!-- Checkout Coupon Accordion Start -->
+                            <div class="checkoutAccordion" id="checkOutAccordion">
+                                <div class="card">
+                                    <h3><i class="fa fa-info-circle"></i> Have a Coupon? <span data-toggle="collapse"
+                                            data-target="#couponaccordion">
+                                            Click here to Enter your Code</span>
+                                    </h3>
+                                    <div id="couponaccordion" class="collapse" data-parent="#checkOutAccordion">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-8">
+                                                    <div class="apply-coupon-wrapper">
+                                                        <p>If you have a coupon code, please apply it below.</p>
+                                                        <form action="#" method="post">
+                                                            <div class="row">
+                                                                <div class="col-md-8">
+                                                                    <div class="input-item mt-0">
+                                                                        <input type="text"
+                                                                            placeholder="Enter Your Coupon Code"
+                                                                            required />
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-4 mt-20 mt-md-0">
+                                                                    <button class="btn btn-bordered">Apply
+                                                                        Coupon</button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Checkout Coupon Accordion End -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- Checkout Form Area Start -->
+                        <div class="checkout-billing-details-wrap">
+                            <h2>Billing Details</h2>
+                            <div class="billing-form-wrap">
+                                <form action="#" method="post">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-item mt-0">
+                                                <label for="f_name" class="sr-only required">First Name</label>
+                                                <input type="text" id="f_name" placeholder="First Name" required />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="input-item mt-md-0">
+                                                <label for="l_name" class="sr-only required">Last Name</label>
+                                                <input type="text" id="l_name" placeholder="Last Name" required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-item">
+                                        <label for="email" class="sr-only required">Email Address</label>
+                                        <input type="email" id="email" placeholder="Email Address" required />
+                                    </div>
+
+                                    <div class="input-item">
+                                        <label for="com-name" class="sr-only">Company Name</label>
+                                        <input type="text" id="com-name" placeholder="Company Name" />
+                                    </div>
+
+                                    <div class="input-item">
+                                        <label for="country" class="sr-only required">Country</label>
+                                        <select name="country" id="country">
+                                            <option value="Afghanistan">Afghanistan</option>
+                                            <option value="Albania">Albania</option>
+                                            <option value="Algeria">Algeria</option>
+                                            <option value="Armenia">Armenia</option>
+                                            <option value="Bangladesh">Bangladesh</option>
+                                            <option value="India">India</option>
+                                            <option value="Pakistan">Pakistan</option>
+                                            <option value="England">England</option>
+                                            <option value="London">London</option>
+                                            <option value="London">London</option>
+                                            <option value="Chaina">China</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-item">
+                                        <label for="street-address" class="sr-only required">Street address</label>
+                                        <input type="text" id="street-address" placeholder="Street address Line 1"
+                                            required />
+                                    </div>
+
+                                    <div class="input-item">
+                                        <input type="text" placeholder="Street address Line 2 (Optional)" />
+                                    </div>
+
+                                    <div class="input-item">
+                                        <label for="town" class="sr-only required">Town / City</label>
+                                        <input type="text" id="town" placeholder="Town / City" required />
+                                    </div>
+
+                                    <div class="input-item">
+                                        <label for="state" class="sr-only">State / Divition</label>
+                                        <input type="text" id="state" placeholder="State / Divition" />
+                                    </div>
+
+                                    <div class="input-item">
+                                        <label for="postcode" class="sr-only required">Postcode / ZIP</label>
+                                        <input type="text" id="postcode" placeholder="Postcode / ZIP" required />
+                                    </div>
+
+                                    <div class="input-item">
+                                        <label for="phone" class="sr-only">Phone</label>
+                                        <input type="text" id="phone" placeholder="Phone" />
+                                    </div>
+
+                                    <div class="checkout-box-wrap">
+                                        <div class="input-item">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="create_pwd">
+                                                <label class="custom-control-label" for="create_pwd">Create an
+                                                    account?</label>
+                                            </div>
+                                        </div>
+                                        <div class="account-create single-form-row">
+                                            <p>Create an account by entering the information below. If you are a
+                                                returning
+                                                customer please login at the top of the page.</p>
+                                            <div class="input-item">
+                                                <label for="pwd" class="sr-only required">Account Password</label>
+                                                <input type="password" id="pwd" placeholder="Account Password"
+                                                    required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="checkout-box-wrap">
+                                        <div class="input-item">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input"
+                                                    id="ship_to_different">
+                                                <label class="custom-control-label" for="ship_to_different">Ship to a
+                                                    different
+                                                    address?</label>
+                                            </div>
+                                        </div>
+                                        <div class="ship-to-different single-form-row">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="input-item">
+                                                        <label for="f_name_2" class="sr-only required">First
+                                                            Name</label>
+                                                        <input type="text" id="f_name_2" placeholder="First Name"
+                                                            required />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="input-item">
+                                                        <label for="l_name_2" class="sr-only required">Last Name</label>
+                                                        <input type="text" id="l_name_2" placeholder="Last Name"
+                                                            required />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="input-item">
+                                                <label for="email_2" class="sr-only required">Email Address</label>
+                                                <input type="email" id="email_2" placeholder="Email Address" required />
+                                            </div>
+
+                                            <div class="input-item">
+                                                <label for="com-name_2" class="sr-only">Company Name</label>
+                                                <input type="text" id="com-name_2" placeholder="Company Name" />
+                                            </div>
+
+                                            <div class="input-item">
+                                                <label for="country_2" class="sr-only required">Country</label>
+                                                <select name="country" id="country_2">
+                                                    <option value="Bangladesh">Bangladesh</option>
+                                                    <option value="India">India</option>
+                                                    <option value="Pakistan">Pakistan</option>
+                                                    <option value="England">England</option>
+                                                    <option value="London">London</option>
+                                                    <option value="London">London</option>
+                                                    <option value="Chaina">Chaina</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="input-item">
+                                                <label for="street-address_2" class="sr-only required">Street
+                                                    address</label>
+                                                <input type="text" id="street-address_2"
+                                                    placeholder="Street address Line 1" required />
+                                            </div>
+
+                                            <div class="input-item">
+                                                <input type="text" placeholder="Street address Line 2 (Optional)" />
+                                            </div>
+
+                                            <div class="input-item">
+                                                <label for="town_2" class="sr-only required">Town / City</label>
+                                                <input type="text" id="town_2" placeholder="Town / City" required />
+                                            </div>
+
+                                            <div class="input-item">
+                                                <label for="state_2" class="sr-only">State / Divition</label>
+                                                <input type="text" id="state_2" placeholder="State / Divition" />
+                                            </div>
+
+                                            <div class="input-item">
+                                                <label for="postcode_2" class="sr-only required">Postcode / ZIP</label>
+                                                <input type="text" id="postcode_2" placeholder="Postcode / ZIP"
+                                                    required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-item">
+                                        <label for="ordernote" class="sr-only">Order Note</label>
+                                        <textarea name="ordernote" id="ordernote" cols="30" rows="3"
+                                            placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xl-5 ml-auto">
+                        <!-- Checkout Page Order Details -->
+                        <div class="order-details-area-wrap">
+                            <h2>Your Order</h2>
+
+                            <div class="order-details-table table-responsive">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th>Products</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="cart-item">
+                                            <td><span class="product-title">Ruffled cotton top</span> <span
+                                                    class="product-quantity">&#215; 1</span></td>
+                                            <td>$39.99</td>
+                                        </tr>
+                                        <tr class="cart-item">
+                                            <td><span class="product-title">Floral Print Voile Bodysuit</span> <span
+                                                    class="product-quantity">&#215; 2</span></td>
+                                            <td>$29.99</td>
+                                        </tr>
+                                        <tr class="cart-item">
+                                            <td><span class="product-title">Metallic cotton dress</span> <span
+                                                    class="product-quantity">&#215; 1</span></td>
+                                            <td>$69.99</td>
+                                        </tr>
+                                        <tr class="cart-item">
+                                            <td><span class="product-title">Ribbed jersey dress</span> <span
+                                                    class="product-quantity">&#215; 1</span></td>
+                                            <td>$39.99</td>
+                                        </tr>
+                                        <tr class="cart-item">
+                                            <td><span class="product-title">Metallic cotton dress</span> <span
+                                                    class="product-quantity">&#215; 1</span></td>
+                                            <td>$69.99</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr class="cart-subtotal">
+                                            <th>Subtotal</th>
+                                            <td>$309.00</td>
+                                        </tr>
+                                        <tr class="shipping">
+                                            <th>Shipping</th>
+                                            <td>
+                                                <ul class="shipping-method">
+                                                    <li>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="flat_shipping"
+                                                                name="shipping_method" class="custom-control-input"
+                                                                checked />
+                                                            <label class="custom-control-label" for="flat_shipping">Flat
+                                                                Rate :
+                                                                $10</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="free_shipping"
+                                                                name="shipping_method" class="custom-control-input" />
+                                                            <label class="custom-control-label" for="free_shipping">Free
+                                                                Shipping</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="cod_shipping" name="shipping_method"
+                                                                class="custom-control-input" />
+                                                            <label class="custom-control-label" for="cod_shipping">Cash
+                                                                on
+                                                                Delivery</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr class="final-total">
+                                            <th>Total</th>
+                                            <td><span class="total-amount">$289.93</span></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+
+                            <div class="order-details-footer">
+                                <p>Your personal data will be used to process your order, support your experience
+                                    throughout
+                                    this website, and for other purposes described in our
+                                    <a href="#" class="text-warning">privacy policy</a>.
+                                </p>
+                                <div class="custom-control custom-checkbox mt-10">
+                                    <input type="checkbox" id="privacy" class="custom-control-input" required />
+                                    <label for="privacy" class="custom-control-label">I have read and agree to the
+                                        website
+                                        terms
+                                        and conditions</label>
+                                </div>
+
+                                <button class="btn btn-bordered mt-40">Place Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--== End Page Content Wrapper ==-->
+
+    <!--Start in politics Section-->
+    <div class="politics ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 politics_cart wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                    <div class="card">
+                        <div class="politics_icon">
+                            <img src="image/free-shipping.jpg" alt="">
+                        </div>
+                        <div class="politics_text">
+                            <h3>
+                                Free Shipping
+                            </h3>
+                            <p>
+                                For all Orders Over $100
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-3 politics_cart wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                    <div class="card">
+                        <div class="politics_icon">
+                            <img src="image/returns.jpg" alt="">
+                        </div>
+                        <div class="politics_text">
+                            <h3>
+                                30 Days Returns
+                            </h3>
+                            <p>
+                                For an Exchange Product
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 politics_cart wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                    <div class="card">
+                        <div class="politics_icon">
+                            <img src="image/secured-payment.jpg" alt="">
+                        </div>
+                        <div class="politics_text">
+                            <h3>
+                                Secured Payment
+                            </h3>
+                            <p>
+                                Payment Cards Accepted
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 politics_cart wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                    <div class="card">
+                        <div class="politics_icon">
+                            <img src="image/support.jpg" alt="">
+                        </div>
+                        <div class="politics_text">
+                            <h3>
+                                Support 24/7
+                            </h3>
+                            <p>
+                                Contact us Anytime
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End in politics Section-->
+
+    <!--== Start Footer Area Wrapper ==-->
+    <footer class="footer-area wow fadeInUp bg-img" data-bg="image/customer_review.png" data-wow-duration="2s"
+        data-wow-delay="1s">
+        <div class="footer-widget-area">
+            <div class=" container-wide">
+                <div class="row mtn-40 mx-4">
+                    <div class="col-sm-12 col-lg-4 col-md-6">
+                        <div class="widget-item">
+                            <div class="about-widget">
+                                <a href="index.html"><img src="image/logo2.png" alt="Logo" /></a>
+                                <p>Magical Spray" is your go-to online destination for enchanting perfumes and
+                                    captivating makeup. Discover a spellbinding selection curated to enhance your beauty
+                                    and elevate your style</p>
+                            </div>
+                            <address class="social_media">
+                                <span>
+                                    <a href="">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </span>
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-2 col-md-6">
+                        <div class="widget-item">
+                            <h4 class="widget-title">About store
+                            </h4>
+                            <div class="widget-body">
+                                <ul class="widget-list">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Why We?</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-2 col-md-6">
+                        <div class="widget-item">
+                            <h4 class="widget-title">Support</h4>
+                            <div class="widget-body">
+                                <ul class="widget-list">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="#">Online Support</a></li>
+                                    <li><a href="#">Money Back</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-4 col-md-6">
+                        <div class="widget-item">
+                            <h4 class="widget-title">Contact</h4>
+                            <div class="widget-body">
+                                <address class="mb-3">
+                                    <span>
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    </span>
+                                    764, Al-Faisaliyah, Jeddah, Saudi Arabia
+                                </address>
+                                <address class="mb-3">
+                                    <span>
+                                        <i class="fa fa-envelope email" aria-hidden="true"></i>
+                                    </span>
+                                    Info@magical-spray.com
+                                </address>
+                                <address class="mb-3">
+                                    <span>
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                    </span>
+                                    (+68)20056369
+                                </address>
+                                <address class="social_media">
+                                    <input type="text" class="footer_input" placeholder="Enter Your Email">
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="footer-copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="copyright-content">
+                            <p>Copyright ©2024 magical-spray </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--== End Footer Area Wrapper ==-->
+
+    <!-- Scroll Top Button -->
+    <button class="btn-scroll-top"><i class="ion-chevron-up"></i></button>
+
+
+
+    <!--== Start Responsive Menu Wrapper ==-->
+    <aside class="off-canvas-wrapper off-canvas-menu">
+        <div class="off-canvas-overlay"></div>
+        <div class="off-canvas-inner">
+            <!-- Start Off Canvas Content -->
+            <div class="off-canvas-content">
+                <div class="off-canvas-header">
+                    <div class="logo">
+                        <a href="index.html"><img src="image/logo2.png" alt="Logo"></a>
+                    </div>
+                    <div class="close-btn">
+                        <button class="btn-close"><i class="ion-android-close"></i></button>
+                    </div>
+                </div>
+
+                <!-- Content Auto Generate Form Main Menu Here -->
+                <div class="res-mobile-menu mobile-menu">
+
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!--== End Responsive Menu Wrapper ==-->
+
+
+    <!--=======================Javascript============================-->
+    <!-- build:js assets/js/app.min.js -->
+    <!--=== Modernizr Min Js ===-->
+    <script src="assets/js/modernizr-3.6.0.min.js"></script>
+    <!--=== jQuery Min Js ===-->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!--=== jQuery Migration Min Js ===-->
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <!--=== Popper Min Js ===-->
+    <script src="assets/js/popper.min.js"></script>
+    <!--=== Bootstrap Min Js ===-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--=== Slicknav Min Js ===-->
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <!--=== Magnific Popup Min Js ===-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--=== Slick Slider Min Js ===-->
+    <script src="assets/js/slick.min.js"></script>
+    <!--=== Nice Select Min Js ===-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--=== Leaflet Min Js ===-->
+    <script src="assets/js/leaflet.min.js"></script>
+    <!--=== Countdown Js ===-->
+    <script src="assets/js/countdown.js"></script>
+
+    <!--=== Active Js ===-->
+    <script src="assets/js/active.js"></script>
+    <!-- endbuild -->
+
+    <script>
+        // JavaScript code goes here
+        function toggleFun() {
+            var registDiv = document.querySelector(".regist");
+            registDiv.classList.toggle("show"); // Toggle the 'show' class
+        }
+    </script>
+
+    <script>
+        // Additional JavaScript code
+        // Ensure the 'toggleFun' function is properly invoked when the user icon is clicked
+        document.querySelector(".fa-user-o").addEventListener("click", toggleFun);
+    </script>
+    <script>
+        let isRTL = false;
+        const button = document.getElementById("rtlButton");
+        const languageText = document.querySelector(".lan_text")
+        button.addEventListener("click", function () {
+            if (isRTL) {
+                document.body.dir = "ltr";
+                languageText.textContent = "English";
+                document.body.classList.add("ltr");
+                document.body.classList.remove("rtl");
+            } else {
+                document.body.dir = "rtl";
+                languageText.textContent = "Arabic";
+                document.body.classList.add("rtl");
+                document.body.classList.remove("ltr");
+
+            }
+            isRTL = !isRTL;
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lukas - Car Parts Store eCommerce HTML Template</title>
+
+    <!--== Favicon ==-->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+
+    <!--== Google Fonts ==-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700%7CPoppins:400,400i,500,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-Tfvc1IEU5sztL3/gkfCtwr3NXEtrACpo3o68eMooj9I5frd4L9gF2gImvv9jR9N" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/fontawesome/css/all.min.css">
+
+    <!-- build:css assets/css/app.min.css -->
+    <!--== Leaflet Min CSS ==-->
+    <link href="assets/css/leaflet.min.css" rel="stylesheet" />
+    <!--== Nice Select Min CSS ==-->
+    <link href="assets/css/nice-select.min.css" rel="stylesheet" />
+    <!--== Slick Slider Min CSS ==-->
+    <link href="assets/css/slick.min.css" rel="stylesheet" />
+    <!--== Magnific Popup Min CSS ==-->
+    <link href="assets/css/magnific-popup.min.css" rel="stylesheet" />
+    <!--== Slicknav Min CSS ==-->
+    <link href="assets/css/slicknav.min.css" rel="stylesheet" />
+    <!--== Animate Min CSS ==-->
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <!--== Ionicons Min CSS ==-->
+    <link href="assets/css/ionicons.min.css" rel="stylesheet" />
+    <!--== Font-Awesome Min CSS ==-->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--== Bootstrap Min CSS ==-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--== Main Style CSS ==-->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/style-rtl.css" rel="stylesheet" />
+
+    <!--== Helper Min CSS ==-->
+    <link href="assets/css/helper.min.css" rel="stylesheet" />
+    <!-- endbuild -->
+
+
+</head>
+
+<body class="register ltr">
+    <!--== Start Header Area ==-->
+    <div class="nav_one bg-img" data-bg="image/customer_review.png">
+        <div class="container">
+            <div class="row language_social">
+                <div class="col-8">
+                    <div class="social_media">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-4 language">
+                    <button class="btn-language" id="rtlButton">
+                        <i class="fa fa-language" aria-hidden="true"></i>
+                        <span class="lan_text">English</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <header class="header-area bg-img" data-bg="image/customer_review.png">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-4 col-lg-2 logo_div">
+                    <div class="site-logo text-center text-sm-left">
+                        <a href="index.html"><img src="image/logo2.png" alt="Logo" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 d-none d-lg-block">
+                    <div class="site-navigation">
+                        <ul class="main-menu nav">
+                            <li class="has-submenu"><a href="index.html">Home</a></li>
+                            <li><a href="about.html" class="">About</a></li>
+                            <li class="has-submenu"><a href="shop.html">Shop</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-lg-3 icon_div">
+                    <div class="site-action d-flex justify-content-center justify-content-sm-end align-items-center">
+                        <ul class="login-reg-nav nav">
+                            <li><i class="fa fa-user-o" aria-hidden="true"></i>
+                                <div class="regist navv">
+                                    <a href="login.html" class="btn btn_login">Login</a>
+                                    <a href="singup.html" class="btn btn_register">Register</a>
+                                </div>
+                            </li>
+                            <li><a href="./wishlist.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                        </ul>
+
+                        <div class="mini-cart-wrap">
+                            <a href="cart.html" class="btn-mini-cart">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <span class="cart-total">3</span>
+                            </a>
+
+                            <div class="mini-cart-content">
+                                <div class="mini-cart-product">
+                                    <div class="mini-product">
+                                        <div class="mini-product__thumb">
+                                            <a href="single-product.html"><img src="assets/img/product/product-1.png"
+                                                    alt="product" /></a>
+                                        </div>
+                                        <div class="mini-product__info">
+                                            <h2 class="title"><a href="single-product.html">Auto Clutch & Brake</a></h2>
+                                            <div class="mini-calculation">
+                                                <p class="price">5 x <span>$20.33</span></p>
+                                                <button class="remove-pro"><i class="ion-trash-b"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Repeat mini-product block for each item -->
+                                    <div class="mini-product">
+                                        <div class="mini-product__thumb">
+                                            <a href="single-product.html"><img src="assets/img/product/product-2.png"
+                                                    alt="product" /></a>
+                                        </div>
+                                        <div class="mini-product__info">
+                                            <h2 class="title"><a href="single-product.html">Leather Steering Wheel</a>
+                                            </h2>
+                                            <div class="mini-calculation">
+                                                <p class="price">5 x <span>$20.33</span></p>
+                                                <button class="remove-pro"><i class="ion-trash-b"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mini-product">
+                                        <div class="mini-product__thumb">
+                                            <a href="single-product.html"><img src="assets/img/product/product-3.png"
+                                                    alt="product" /></a>
+                                        </div>
+                                        <div class="mini-product__info">
+                                            <h2 class="title"><a href="single-product.html">Leather Steering Wheel</a>
+                                            </h2>
+                                            <div class="mini-calculation">
+                                                <p class="price">5 x <span>$20.33</span></p>
+                                                <button class="remove-pro"><i class="ion-trash-b"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Repeat mini-product block for each item -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="responsive-menu d-lg-none">
+                            <button class="btn-menu">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--== End Header Area ==-->
+
+
+    <div class="singup">
+        <div class="container ">
+            <div class="row justify-content-center align-items-center">
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <form class="form  ">
+                        <h4 class="text-center">SIGN Up</h4>
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <div class=" ">
+                                    <img src="./image/person_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class=" ">
+                                    <img src="./image/person_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" email_div">
+                            <img src="./image/mail_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                        <div class="row ">
+                            <div class=" col-md-6 col-12">
+                                <img src="./image/lock_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                                <input type="password" class="form-control" placeholder="Password"
+                                    id="exampleInputPassword1">
+                            </div>
+                            <div class=" col-md-6 col-12">
+                                <img src="./image/lock_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                                <input type="password" class="form-control" placeholder="Confirm Password"
+                                    id="exampleInputPassword1">
+                            </div>
+                        </div>
+                        <!-- <div class="mb-4 "> -->
+                        <!-- <img src="./image/phone_iphone_FILL0_wght400_GRAD0_opsz24.png" alt=""> -->
+                        <!-- <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Phone Number"> -->
+                        <!-- </div> -->
+                        <div class="mt-4 d-flex">
+                            <select class="form-select nationality" aria-label="Default select example">
+                                <option selected>Egy +20</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <input type="number" class="form-control phone" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Phone Number">
+
+                        </div>
+                        <div class="mt-4 ">
+                            <select class="form-select gender" aria-label="Disabled select example">
+                                <option selected>Gender</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                        </div>
+                        <div class="mt-4 ">
+                            <select class="form-select gender" aria-label="Disabled select example">
+                                <option selected>Nationality</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+
+                            </select>
+                        </div>
+                        <div class="mb-2 mt-4 text-center">
+                            <a type="submit" class="btn btn_submit" href="./login.html">Sing Up</a>
+                        </div>
+                        <div class=" text-center">
+                            <p>Already have account? <a class="form-check-label" href="./login.html">Sign In</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- <div class="singup_img col-lg-6 col-md-0"> -->
+                <!-- <h3 class="">Register with us and get the car you want .</h3> -->
+                <!-- <div class="image_singup"> -->
+                <!-- <img src="./image/Vihecle-list-image-02.jpg" alt=""> -->
+                <!--  -->
+                <!-- </div> -->
+                <!-- </div> -->
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--== Start Footer Area Wrapper ==-->
+    <footer class="footer-area wow fadeInUp bg-img" data-bg="image/customer_review.png" data-wow-duration="2s"
+        data-wow-delay="1s">
+        <div class="footer-widget-area">
+            <div class=" container-wide">
+                <div class="row mtn-40 mx-4">
+                    <div class="col-sm-12 col-lg-4 col-md-6">
+                        <div class="widget-item">
+                            <div class="about-widget">
+                                <a href="index.html"><img src="image/logo2.png" alt="Logo" /></a>
+                                <p>Magical Spray" is your go-to online destination for enchanting perfumes and
+                                    captivating makeup. Discover a spellbinding selection curated to enhance your beauty
+                                    and elevate your style</p>
+                            </div>
+                            <address class="social_media">
+                                <span>
+                                    <a href="">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </span>
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-2 col-md-6">
+                        <div class="widget-item">
+                            <h4 class="widget-title">About store
+                            </h4>
+                            <div class="widget-body">
+                                <ul class="widget-list">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Why We?</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-2 col-md-6">
+                        <div class="widget-item">
+                            <h4 class="widget-title">Support</h4>
+                            <div class="widget-body">
+                                <ul class="widget-list">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="#">Online Support</a></li>
+                                    <li><a href="#">Money Back</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-4 col-md-6">
+                        <div class="widget-item">
+                            <h4 class="widget-title">Contact</h4>
+                            <div class="widget-body">
+                                <address class="mb-3">
+                                    <span>
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    </span>
+                                    764, Al-Faisaliyah, Jeddah, Saudi Arabia
+                                </address>
+                                <address class="mb-3">
+                                    <span>
+                                        <i class="fa fa-envelope email" aria-hidden="true"></i>
+                                    </span>
+                                    Info@magical-spray.com
+                                </address>
+                                <address class="mb-3">
+                                    <span>
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                    </span>
+                                    (+68)20056369
+                                </address>
+                                <address class="social_media">
+                                    <input type="text" class="footer_input" placeholder="Enter Your Email">
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="footer-copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="copyright-content">
+                            <p>Copyright ©2024 magical-spray </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--== End Footer Area Wrapper ==-->
+
+    <!-- Scroll Top Button -->
+    <button class="btn-scroll-top"><i class="ion-chevron-up"></i></button>
+
+
+
+    <!--== Start Responsive Menu Wrapper ==-->
+    <aside class="off-canvas-wrapper off-canvas-menu">
+        <div class="off-canvas-overlay"></div>
+        <div class="off-canvas-inner">
+            <!-- Start Off Canvas Content -->
+            <div class="off-canvas-content">
+                <div class="off-canvas-header">
+                    <div class="logo">
+                        <a href="index.html"><img src="image/logo2.png" alt="Logo"></a>
+                    </div>
+                    <div class="close-btn">
+                        <button class="btn-close"><i class="ion-android-close"></i></button>
+                    </div>
+                </div>
+
+                <!-- Content Auto Generate Form Main Menu Here -->
+                <div class="res-mobile-menu mobile-menu">
+
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!--== End Responsive Menu Wrapper ==-->
+
+
+
+    <!--=======================Javascript============================-->
+    <!-- build:js assets/js/app.min.js -->
+    <!--=== Modernizr Min Js ===-->
+    <script src="assets/js/modernizr-3.6.0.min.js"></script>
+    <!--=== jQuery Min Js ===-->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!--=== jQuery Migration Min Js ===-->
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <!--=== Popper Min Js ===-->
+    <script src="assets/js/popper.min.js"></script>
+    <!--=== Bootstrap Min Js ===-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--=== Slicknav Min Js ===-->
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <!--=== Magnific Popup Min Js ===-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--=== Slick Slider Min Js ===-->
+    <script src="assets/js/slick.min.js"></script>
+    <!--=== Nice Select Min Js ===-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--=== Leaflet Min Js ===-->
+    <script src="assets/js/leaflet.min.js"></script>
+    <!--=== Countdown Js ===-->
+    <script src="assets/js/countdown.js"></script>
+
+    <!--=== Active Js ===-->
+    <script src="assets/js/active.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- endbuild -->
+    <script>
+        function submitDateTime() {
+            // Get the selected date and time
+            var selectedDateTime = document.getElementById("datetime").value;
+
+            // You can use the selectedDateTime as needed, for example, send it to the server or perform some other action.
+            console.log("Selected Date and Time: " + selectedDateTime);
+        }
+    </script>
+    <script>
+        // JavaScript code goes here
+        function toggleFun() {
+            var registDiv = document.querySelector(".regist");
+            registDiv.classList.toggle("show"); // Toggle the 'show' class
+        }
+    </script>
+
+    <script>
+        // Additional JavaScript code
+        // Ensure the 'toggleFun' function is properly invoked when the user icon is clicked
+        document.querySelector(".fa-user-o").addEventListener("click", toggleFun);
+    </script>
+    <script>
+        let isRTL = false;
+        const button = document.getElementById("rtlButton");
+        const languageText = document.querySelector(".lan_text")
+        button.addEventListener("click", function () {
+            if (isRTL) {
+                document.body.dir = "ltr";
+                languageText.textContent = "English";
+                document.body.classList.add("ltr");
+                document.body.classList.remove("rtl");
+            } else {
+                document.body.dir = "rtl";
+                languageText.textContent = "Arabic";
+                document.body.classList.add("rtl");
+                document.body.classList.remove("ltr");
+
+            }
+            isRTL = !isRTL;
+        });
+    </script>
+
+</body>
+
+</html>
